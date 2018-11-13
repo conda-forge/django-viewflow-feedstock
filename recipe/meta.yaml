@@ -1,6 +1,6 @@
 {% set name = "django-viewflow" %}
-{% set version = "1.2.5" %}
-{% set sha256 = "9e2ce0aa45da230d884b1f63bc31e585a89237ed3556d9c2475cca57dd288445" %}
+{% set version = "1.4.2" %}
+{% set sha256 = "c8623eb2a1ee1c70ba64ca7c8d8fcb6e979329a7c0ebbfaa11c956b281e6472a" %}
 
 package:
   name: {{ name|lower }}
