@@ -1,6 +1,6 @@
 {% set name = "django-viewflow" %}
-{% set version = "1.5.1" %}
-{% set sha256 = "6cecba6fd21a7ae23f6b10c98db032e46987f6a520e183a5b556cb87ede9c180" %}
+{% set version = "1.6.1" %}
+{% set sha256 = "353891f1974fa55695b713314e241ca0cddd3b7551686090f2d19a718d5a7667" %}
 
 package:
   name: {{ name|lower }}
@@ -27,14 +27,15 @@ requirements:
 
 test:
   commands:
-    - python -c "import django; from django.conf import settings; settings.configure(INSTALLED_APPS=['viewflow']); django.setup(); import viewflow; import viewflow.flow; import viewflow.flow.views; import viewflow.management; import viewflow.migrations; import viewflow.nodes; import viewflow.templatetags; import viewflow.frontend; import viewflow.frontend.templatetags"
+    - python -c "import django; from django.conf import settings; settings.configure(INSTALLED_APPS=['viewflow']); django.setup(); import viewflow; import viewflow.flow; import viewflow.flow.views; import viewflow.management; import viewflow.migrations; import viewflow.nodes; import viewflow.templatetags; import viewflow.frontend;
+      import viewflow.frontend.templatetags"
 
 about:
   home: http://viewflow.io/
   license: AGPL-3.0
   license_family: GPL3
   license_file: LICENSE
-  summary: 'Reusable workflow library for Django'
+  summary: Reusable workflow library for Django
   description: |
     Viewflow takes the best parts from two worlds. It is based on BPMN - 
     business process modeling and notation standard - and plays well with the 
