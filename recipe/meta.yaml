@@ -31,7 +31,7 @@ test:
     - viewflow
   commands:
     - pip check
-    - python -c "import django; from django.conf import settings; settings.configure(INSTALLED_APPS=['viewflow']); django.setup(); import viewflow; import viewflow.flow; import viewflow.flow.views; import viewflow.management; import viewflow.migrations; import viewflow.nodes; import viewflow.templatetags; import viewflow.frontend; import viewflow.frontend.templatetags"
+#    - python -c "import django; from django.conf import settings; settings.configure(INSTALLED_APPS=['viewflow']); django.setup(); import viewflow; import viewflow.flow; import viewflow.flow.views; import viewflow.management; import viewflow.migrations; import viewflow.nodes; import viewflow.templatetags; import viewflow.frontend; import viewflow.frontend.templatetags"
   requires:
     - pip
 
