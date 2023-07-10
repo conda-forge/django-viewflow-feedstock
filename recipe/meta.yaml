@@ -1,5 +1,5 @@
 {% set name = "django-viewflow" %}
-{% set version = "1.11.0" %}
+{% set version = "2.0.0b4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-viewflow-{{ version }}.tar.gz
-  sha256: edb0d9bf20b406fff781eea91cd3d250cde3b3ff956ce6451ceeabab3bbc8f94
+  sha256: 198f26da17718531f843a8393a45764dfd7823dcf8199165dbe0e3a3e2788935
 
 build:
   noarch: python
@@ -16,22 +16,20 @@ build:
 
 requirements:
   host:
-    - python >=3.7,<3.11
+    - python >=3.7
     - pip
   run:
-    - python >=3.7,<3.11
-    - django >=2.2
-    - django-filter >=1.0
-    - django-jsonstore
-    - django-annoying
-    - six
+    - python >=3.7
+    - django >=3.2
+    - django-filter >=2.3.0
 
 test:
-  imports:
-    - viewflow
+  #imports:
+    #- viewflow
   commands:
+    - python -c "import django; from django.conf import settings; settings.configure(INSTALLED_APPS=['viewflow']); django.setup(); import viewflow "
     - pip check
-#    - python -c "import django; from django.conf import settings; settings.configure(INSTALLED_APPS=['viewflow']); django.setup(); import viewflow; import viewflow.flow; import viewflow.flow.views; import viewflow.management; import viewflow.migrations; import viewflow.nodes; import viewflow.templatetags; import viewflow.frontend; import viewflow.frontend.templatetags"
+    #- python -c "import django; from django.conf import settings; settings.configure(INSTALLED_APPS=['viewflow']); django.setup(); import viewflow; import viewflow.flow; import viewflow.flow.views; import viewflow.management; import viewflow.migrations; import viewflow.nodes; import viewflow.templatetags; import viewflow.frontend; import viewflow.frontend.templatetags"
   requires:
     - pip
 
