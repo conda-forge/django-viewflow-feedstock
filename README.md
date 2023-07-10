@@ -1,11 +1,11 @@
-About django-viewflow
-=====================
+About django-viewflow-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-viewflow-feedstock/blob/main/LICENSE.txt)
 
 Home: http://viewflow.io/
 
-Package license: AGPL-3.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-viewflow-feedstock/blob/main/LICENSE.txt)
+Package license: AGPL-3.0-or-later
 
 Summary: Reusable workflow library for Django
 
