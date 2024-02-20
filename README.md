@@ -1,11 +1,11 @@
-About django-viewflow
-=====================
+About django-viewflow-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-viewflow-feedstock/blob/main/LICENSE.txt)
 
 Home: http://viewflow.io/
 
-Package license: AGPL-3.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-viewflow-feedstock/blob/main/LICENSE.txt)
+Package license: AGPL-3.0-or-later
 
 Summary: Reusable workflow library for Django
 
@@ -43,14 +43,14 @@ Current release info
 Installing django-viewflow
 ==========================
 
-Installing `django-viewflow` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `django-viewflow` from the `conda-forge/label/django-viewflow_rc` channel can be achieved by adding `conda-forge/label/django-viewflow_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/django-viewflow_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `django-viewflow` can be installed with `conda`:
+Once the `conda-forge/label/django-viewflow_rc` channel has been enabled, `django-viewflow` can be installed with `conda`:
 
 ```
 conda install django-viewflow
@@ -65,26 +65,26 @@ mamba install django-viewflow
 It is possible to list all of the versions of `django-viewflow` available on your platform with `conda`:
 
 ```
-conda search django-viewflow --channel conda-forge
+conda search django-viewflow --channel conda-forge/label/django-viewflow_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search django-viewflow --channel conda-forge
+mamba search django-viewflow --channel conda-forge/label/django-viewflow_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search django-viewflow --channel conda-forge
+mamba repoquery search django-viewflow --channel conda-forge/label/django-viewflow_rc
 
 # List packages depending on `django-viewflow`:
-mamba repoquery whoneeds django-viewflow --channel conda-forge
+mamba repoquery whoneeds django-viewflow --channel conda-forge/label/django-viewflow_rc
 
 # List dependencies of `django-viewflow`:
-mamba repoquery depends django-viewflow --channel conda-forge
+mamba repoquery depends django-viewflow --channel conda-forge/label/django-viewflow_rc
 ```
 
 
@@ -106,7 +106,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
