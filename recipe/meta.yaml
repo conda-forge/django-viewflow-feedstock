@@ -24,6 +24,8 @@ requirements:
     - django-filter >=2.3.0
 
 test:
+  imports:
+    - viewflow
   commands:
     - python -c "import django; from django.conf import settings; settings.configure(DEBUG=True,INSTALLED_APPS=['viewflow']); django.setup(); import viewflow; import viewflow.apps; import viewflow.conf; import viewflow.contrib; import viewflow.fields; import viewflow.forms; import viewflow.fsm; import viewflow.jsonstore; import viewflow.locale; import viewflow.management; import viewflow.middleware; import viewflow.static; import viewflow.templates; import viewflow.templatetags; import viewflow.urls; import viewflow.utils; import viewflow.views; import viewflow.workflow"    
     - pip check
