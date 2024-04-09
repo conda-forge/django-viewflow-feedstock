@@ -1,13 +1,13 @@
-{% set name = "django-viewflow" %}
-{% set version = "2.0.0b8" %}
+{% set name = "viewflow" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-viewflow-{{ version }}.tar.gz
-  sha256: 6fe4c748455357dcbad669c8a0048912f0957bfb314843499ac3a2c78f9084fe
+  url: https://github.com/viewflow/viewflow/archive/{{ version }}.tar.gz
+  sha256: 18f9913c1881a943f324a8596cedb65dac75f995d6488ee256555c450443a2db
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - django >=3.2
+    - django >=4.2
     - django-filter >=2.3.0
 
 test:
