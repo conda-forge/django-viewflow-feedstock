@@ -1,5 +1,5 @@
 {% set name = "django-viewflow" %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-viewflow-{{ version }}.tar.gz
-  sha256: 82d1ba15f5bc923fde0fd1f435e42f8ac97a369a7110bc194050f45c8df02fd0
+  sha256: d76fca04ab94feeb6a90eb1f0f030df44ba13c773807e5b685e5edab6573c9d9
 
 build:
   noarch: python
