@@ -1,5 +1,6 @@
 {% set name = "django-viewflow" %}
 {% set version = "2.2.10" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
